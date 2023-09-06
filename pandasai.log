@@ -1,0 +1,743 @@
+2023-09-06 23:00:48 [ERROR] Could not load configuration
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pandasai/config.py", line 19, in load_config
+    with open(find_closest("pandasai.json"), "r") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/cyrildubovik/Python_projects/streamlit_panda/pandasai.json'
+2023-09-06 23:00:48 [INFO] Question: how many passengers survived?
+
+2023-09-06 23:00:48 [INFO] Running PandasAI with openai LLM...
+2023-09-06 23:00:48 [INFO] Prompt ID: d507b522-a0e0-4c65-a595-16b180220e7b
+2023-09-06 23:01:07 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in /temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Code goes here (do not add comments)
+    survived_passengers = dfs[0]['Survived'].sum()
+    return {"type": "number", "value": survived_passengers}
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-09-06 23:01:07 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    survived_passengers = dfs[0]['Survived'].sum()
+    return {'type': 'number', 'value': survived_passengers}
+
+
+result = analyze_data(dfs)
+        ```
+2023-09-06 23:01:07 [INFO] Answer: {'type': 'number', 'value': 342}
+2023-09-06 23:01:07 [INFO] Executed in: 18.84984517097473s
+2023-09-06 23:07:03 [ERROR] Could not load configuration
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pandasai/config.py", line 19, in load_config
+    with open(find_closest("pandasai.json"), "r") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/cyrildubovik/Python_projects/streamlit_panda/pandasai.json'
+2023-09-06 23:08:18 [ERROR] Could not load configuration
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pandasai/config.py", line 19, in load_config
+    with open(find_closest("pandasai.json"), "r") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/cyrildubovik/Python_projects/streamlit_panda/pandasai.json'
+2023-09-06 23:09:49 [ERROR] Could not load configuration
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pandasai/config.py", line 19, in load_config
+    with open(find_closest("pandasai.json"), "r") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/cyrildubovik/Python_projects/streamlit_panda/pandasai.json'
+2023-09-06 23:09:49 [INFO] Question: how many survivors 
+2023-09-06 23:09:49 [INFO] Running PandasAI with openai LLM...
+2023-09-06 23:09:49 [INFO] Prompt ID: 3ed5ab26-37cc-4ce4-a531-f2c7503b4048
+2023-09-06 23:10:06 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Code goes here (do not add comments)
+    survivors = dfs[0]['Survived'].sum()
+    return {"type": "number", "value": survivors}
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-09-06 23:10:06 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    survivors = dfs[0]['Survived'].sum()
+    return {'type': 'number', 'value': survivors}
+
+
+result = analyze_data(dfs)
+        ```
+2023-09-06 23:10:06 [INFO] Answer: {'type': 'number', 'value': 342}
+2023-09-06 23:10:06 [INFO] Executed in: 17.59647798538208s
+2023-09-06 23:11:08 [ERROR] Could not load configuration
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pandasai/config.py", line 19, in load_config
+    with open(find_closest("pandasai.json"), "r") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/cyrildubovik/Python_projects/streamlit_panda/pandasai.json'
+2023-09-06 23:11:08 [INFO] Question: summerise 
+2023-09-06 23:11:08 [INFO] Running PandasAI with openai LLM...
+2023-09-06 23:11:08 [INFO] Prompt ID: a7a44bca-0b1a-4b90-b32e-3b6ce982b126
+2023-09-06 23:11:25 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Code goes here (do not add comments)
+    summary = dfs[0].describe()
+    return {"type": "dataframe", "value": summary}
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-09-06 23:11:25 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    summary = dfs[0].describe()
+    return {'type': 'dataframe', 'value': summary}
+
+
+result = analyze_data(dfs)
+        ```
+2023-09-06 23:11:25 [INFO] Answer: {'type': 'dataframe', 'value':        PassengerId    Survived      Pclass         Age       SibSp       Parch        Fare
+count   891.000000  891.000000  891.000000  714.000000  891.000000  891.000000  891.000000
+mean    446.000000    0.383838    2.308642   29.699118    0.523008    0.381594   32.204208
+std     257.353842    0.486592    0.836071   14.526497    1.102743    0.806057   49.693429
+min       1.000000    0.000000    1.000000    0.420000    0.000000    0.000000    0.000000
+25%     223.500000    0.000000    2.000000   20.125000    0.000000    0.000000    7.910400
+50%     446.000000    0.000000    3.000000   28.000000    0.000000    0.000000   14.454200
+75%     668.500000    1.000000    3.000000   38.000000    1.000000    0.000000   31.000000
+max     891.000000    1.000000    3.000000   80.000000    8.000000    6.000000  512.329200}
+2023-09-06 23:11:25 [INFO] Executed in: 17.03810691833496s
+2023-09-06 23:11:25 [ERROR] Could not load configuration
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pandasai/config.py", line 19, in load_config
+    with open(find_closest("pandasai.json"), "r") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/cyrildubovik/Python_projects/streamlit_panda/pandasai.json'
+2023-09-06 23:13:26 [ERROR] Could not load configuration
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pandasai/config.py", line 19, in load_config
+    with open(find_closest("pandasai.json"), "r") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/cyrildubovik/Python_projects/streamlit_panda/pandasai.json'
+2023-09-06 23:13:26 [INFO] Question: who was more likely to survive?
+
+2023-09-06 23:13:26 [INFO] Running PandasAI with openai LLM...
+2023-09-06 23:13:26 [INFO] Prompt ID: e84ecdc0-43cd-40eb-af1b-b659c4ea6cf4
+2023-09-06 23:13:45 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Code goes here (do not add comments)
+    df = dfs[0]
+    survived_count = df['Survived'].sum()
+    total_count = df.shape[0]
+    survival_rate = survived_count / total_count * 100
+    
+    return {"type": "text", "value": f"The survival rate is {survival_rate:.2f}%."}
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-09-06 23:13:45 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    df = dfs[0]
+    survived_count = df['Survived'].sum()
+    total_count = df.shape[0]
+    survival_rate = survived_count / total_count * 100
+    return {'type': 'text', 'value': f'The survival rate is {survival_rate:.2f}%.'}
+
+
+result = analyze_data(dfs)
+        ```
+2023-09-06 23:13:45 [INFO] Answer: {'type': 'text', 'value': 'The survival rate is 38.38%.'}
+2023-09-06 23:13:45 [INFO] Executed in: 18.712472200393677s
+2023-09-06 23:21:02 [ERROR] Could not load configuration
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pandasai/config.py", line 19, in load_config
+    with open(find_closest("pandasai.json"), "r") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/cyrildubovik/Python_projects/streamlit_panda/pandasai.json'
+2023-09-06 23:21:02 [INFO] Question: make a basic chart
+2023-09-06 23:21:02 [INFO] Running PandasAI with openai LLM...
+2023-09-06 23:21:02 [INFO] Prompt ID: 85c5d3c7-a49e-45a1-bcf3-12f0a2797b82
+2023-09-06 23:21:05 [ERROR] Could not load configuration
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pandasai/config.py", line 19, in load_config
+    with open(find_closest("pandasai.json"), "r") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/cyrildubovik/Python_projects/streamlit_panda/pandasai.json'
+2023-09-06 23:21:05 [INFO] Question: make a basic chart
+2023-09-06 23:21:05 [INFO] Running PandasAI with openai LLM...
+2023-09-06 23:21:05 [INFO] Prompt ID: 9561ba7a-4930-4ff4-826d-c808e5252816
+2023-09-06 23:21:25 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Code goes here (do not add comments)
+    # Create a basic chart
+    plt.plot(dfs[0]['PassengerId'], dfs[0]['Fare'])
+    plt.xlabel('PassengerId')
+    plt.ylabel('Fare')
+    plt.title('Fare by PassengerId')
+    plt.savefig('exports/charts/temp_chart.png')
+    
+    # Return the path of the plot
+    return {"type": "plot", "value": "exports/charts/temp_chart.png"}
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-09-06 23:21:25 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    plt.plot(dfs[0]['PassengerId'], dfs[0]['Fare'])
+    plt.xlabel('PassengerId')
+    plt.ylabel('Fare')
+    plt.title('Fare by PassengerId')
+    plt.savefig('exports/charts/temp_chart.png')
+    return {'type': 'plot', 'value': 'exports/charts/temp_chart.png'}
+
+
+result = analyze_data(dfs)
+        ```
+2023-09-06 23:21:26 [INFO] Answer: {'type': 'plot', 'value': 'exports/charts/temp_chart.png'}
+2023-09-06 23:21:26 [INFO] Executed in: 24.107265949249268s
+2023-09-06 23:21:27 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Code goes here (do not add comments)
+    # Create a basic chart
+    plt.plot(dfs[0]['PassengerId'], dfs[0]['Fare'])
+    plt.xlabel('PassengerId')
+    plt.ylabel('Fare')
+    plt.title('Fare by PassengerId')
+    plt.savefig('exports/charts/temp_chart.png')
+    
+    # Return the path of the plot
+    return {"type": "plot", "value": "exports/charts/temp_chart.png"}
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-09-06 23:21:27 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    plt.plot(dfs[0]['PassengerId'], dfs[0]['Fare'])
+    plt.xlabel('PassengerId')
+    plt.ylabel('Fare')
+    plt.title('Fare by PassengerId')
+    plt.savefig('exports/charts/temp_chart.png')
+    return {'type': 'plot', 'value': 'exports/charts/temp_chart.png'}
+
+
+result = analyze_data(dfs)
+        ```
+2023-09-06 23:21:27 [INFO] Answer: {'type': 'plot', 'value': 'exports/charts/temp_chart.png'}
+2023-09-06 23:21:27 [INFO] Executed in: 21.926264762878418s
+2023-09-06 23:22:32 [ERROR] Could not load configuration
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pandasai/config.py", line 19, in load_config
+    with open(find_closest("pandasai.json"), "r") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/cyrildubovik/Python_projects/streamlit_panda/pandasai.json'
+2023-09-06 23:22:32 [INFO] Question: how many passengers?
+
+2023-09-06 23:22:32 [INFO] Running PandasAI with openai LLM...
+2023-09-06 23:22:32 [INFO] Prompt ID: 3ae5c7b1-c9aa-45d4-8d49-4bbfd2adaf6e
+2023-09-06 23:22:49 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Code goes here (do not add comments)
+    num_passengers = dfs[0].shape[0]
+    return {"type": "number", "value": num_passengers}
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-09-06 23:22:49 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    num_passengers = dfs[0].shape[0]
+    return {'type': 'number', 'value': num_passengers}
+
+
+result = analyze_data(dfs)
+        ```
+2023-09-06 23:22:49 [INFO] Answer: {'type': 'number', 'value': 891}
+2023-09-06 23:22:49 [INFO] Executed in: 16.85878586769104s
+2023-09-06 23:48:57 [ERROR] Could not load configuration
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pandasai/config.py", line 19, in load_config
+    with open(find_closest("pandasai.json"), "r") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/cyrildubovik/Python_projects/streamlit_panda/pandasai.json'
+2023-09-06 23:48:57 [INFO] Question: Кто более удачливые мужчины или женщины?
+2023-09-06 23:48:57 [INFO] Running PandasAI with openai LLM...
+2023-09-06 23:48:57 [INFO] Prompt ID: 318e71dd-ea90-43f3-9513-214a3d801b34
+2023-09-06 23:49:20 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Code goes here (do not add comments)
+    # Combine all the dataframes into one
+    df = pd.concat(dfs)
+
+    # Group the data by sex and calculate the survival rate
+    survival_rate = df.groupby('Sex')['Survived'].mean()
+
+    # Determine which gender has a higher survival rate
+    if survival_rate['male'] > survival_rate['female']:
+        result = "Men are more lucky than women."
+    else:
+        result = "Women are more lucky than men."
+
+    return {"type": "text", "value": result}
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-09-06 23:49:20 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    df = pd.concat(dfs)
+    survival_rate = df.groupby('Sex')['Survived'].mean()
+    if survival_rate['male'] > survival_rate['female']:
+        result = 'Men are more lucky than women.'
+    else:
+        result = 'Women are more lucky than men.'
+    return {'type': 'text', 'value': result}
+
+
+result = analyze_data(dfs)
+        ```
+2023-09-06 23:49:20 [INFO] Answer: {'type': 'text', 'value': 'Women are more lucky than men.'}
+2023-09-06 23:49:20 [INFO] Executed in: 22.660328149795532s
+2023-09-06 23:49:38 [ERROR] Could not load configuration
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pandasai/config.py", line 19, in load_config
+    with open(find_closest("pandasai.json"), "r") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/cyrildubovik/Python_projects/streamlit_panda/pandasai.json'
+2023-09-06 23:49:38 [INFO] Question: Кто более удачливые мужчины или женщины? Объясни почему. 
+2023-09-06 23:49:38 [INFO] Running PandasAI with openai LLM...
+2023-09-06 23:49:38 [INFO] Prompt ID: 9f13999d-9e3b-47d3-aca5-07d65b9a56e7
+2023-09-06 23:50:03 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Code goes here (do not add comments)
+    df = dfs[0]
+    
+    # Group by gender and calculate the survival rate
+    gender_survival_rate = df.groupby('Sex')['Survived'].mean()
+    
+    # Determine which gender has a higher survival rate
+    if gender_survival_rate['female'] > gender_survival_rate['male']:
+        result = "Women are luckier than men because they have a higher survival rate."
+    elif gender_survival_rate['female'] < gender_survival_rate['male']:
+        result = "Men are luckier than women because they have a higher survival rate."
+    else:
+        result = "Men and women have the same luck as they have the same survival rate."
+    
+    return {"type": "text", "value": result}
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-09-06 23:50:03 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    df = dfs[0]
+    gender_survival_rate = df.groupby('Sex')['Survived'].mean()
+    if gender_survival_rate['female'] > gender_survival_rate['male']:
+        result = 'Women are luckier than men because they have a higher survival rate.'
+    elif gender_survival_rate['female'] < gender_survival_rate['male']:
+        result = 'Men are luckier than women because they have a higher survival rate.'
+    else:
+        result = 'Men and women have the same luck as they have the same survival rate.'
+    return {'type': 'text', 'value': result}
+
+
+result = analyze_data(dfs)
+        ```
+2023-09-06 23:50:03 [INFO] Answer: {'type': 'text', 'value': 'Women are luckier than men because they have a higher survival rate.'}
+2023-09-06 23:50:03 [INFO] Executed in: 25.371392726898193s
+2023-09-06 23:51:16 [ERROR] Could not load configuration
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pandasai/config.py", line 19, in load_config
+    with open(find_closest("pandasai.json"), "r") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/cyrildubovik/Python_projects/streamlit_panda/pandasai.json'
+2023-09-06 23:51:16 [INFO] Question: Сделай график соотношения выживших мужчин и женщин 
+
+2023-09-06 23:51:16 [INFO] Running PandasAI with openai LLM...
+2023-09-06 23:51:16 [INFO] Prompt ID: 47029850-9a74-4ca1-9cf6-ec29f51f6ac5
+2023-09-06 23:51:40 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Code goes here (do not add comments)
+    df = dfs[0]
+    
+    # Group by sex and calculate the count of survivors
+    survival_counts = df.groupby('Sex')['Survived'].sum()
+    
+    # Create a bar plot
+    plt.bar(survival_counts.index, survival_counts.values)
+    plt.xlabel('Sex')
+    plt.ylabel('Survival Count')
+    plt.title('Survival Count by Sex')
+    
+    # Save the plot to an image file
+    plt.savefig('exports/charts/temp_chart.png')
+    plt.close()
+    
+    # Return the path of the plot
+    return {"type": "plot", "value": "exports/charts/temp_chart.png"}
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-09-06 23:51:40 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    df = dfs[0]
+    survival_counts = df.groupby('Sex')['Survived'].sum()
+    plt.bar(survival_counts.index, survival_counts.values)
+    plt.xlabel('Sex')
+    plt.ylabel('Survival Count')
+    plt.title('Survival Count by Sex')
+    plt.savefig('exports/charts/temp_chart.png')
+    plt.close()
+    return {'type': 'plot', 'value': 'exports/charts/temp_chart.png'}
+
+
+result = analyze_data(dfs)
+        ```
+2023-09-06 23:51:41 [INFO] Answer: {'type': 'plot', 'value': 'exports/charts/temp_chart.png'}
+2023-09-06 23:51:41 [INFO] Executed in: 25.141376972198486s
+2023-09-06 23:57:50 [ERROR] Could not load configuration
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pandasai/config.py", line 19, in load_config
+    with open(find_closest("pandasai.json"), "r") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/cyrildubovik/Python_projects/streamlit_panda/pandasai.json'
+2023-09-06 23:57:50 [INFO] Question: Сделай график соотношения выживших мужчин и женщин 
+2023-09-06 23:57:50 [INFO] Running PandasAI with openai LLM...
+2023-09-06 23:57:50 [INFO] Prompt ID: cda48c51-4a22-4e40-97a6-a34c69f25c20
+2023-09-06 23:58:12 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Code goes here (do not add comments)
+    df = dfs[0]
+    
+    # Group by sex and calculate the count of survivors
+    survival_counts = df.groupby('Sex')['Survived'].sum()
+    
+    # Create a bar plot
+    plt.bar(survival_counts.index, survival_counts.values)
+    plt.xlabel('Sex')
+    plt.ylabel('Survival Count')
+    plt.title('Survival Count by Sex')
+    
+    # Save the plot to an image file
+    plt.savefig('exports/charts/temp_chart.png')
+    plt.close()
+    
+    # Return the path of the plot
+    return {"type": "plot", "value": "exports/charts/temp_chart.png"}
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-09-06 23:58:12 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    df = dfs[0]
+    survival_counts = df.groupby('Sex')['Survived'].sum()
+    plt.bar(survival_counts.index, survival_counts.values)
+    plt.xlabel('Sex')
+    plt.ylabel('Survival Count')
+    plt.title('Survival Count by Sex')
+    plt.savefig('exports/charts/temp_chart.png')
+    plt.close()
+    return {'type': 'plot', 'value': 'exports/charts/temp_chart.png'}
+
+
+result = analyze_data(dfs)
+        ```
+2023-09-06 23:58:12 [INFO] Answer: {'type': 'plot', 'value': 'exports/charts/temp_chart.png'}
+2023-09-06 23:58:12 [INFO] Executed in: 22.599562883377075s
+2023-09-07 00:24:51 [INFO] Question: У кого были счастливые билеты?
+
+2023-09-07 00:24:51 [INFO] Running PandasAI with openai LLM...
+2023-09-07 00:24:51 [INFO] Prompt ID: 9b9518cb-da5c-4814-8871-9a7681d4749a
+2023-09-07 00:25:13 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Filter the dataframe to get the passengers who survived
+    survived_passengers = dfs[0][dfs[0]['Survived'] == 1]
+    
+    # Get the unique ticket numbers of the survived passengers
+    unique_tickets = survived_passengers['Ticket'].unique()
+    
+    # Filter the dataframe to get the passengers with the unique ticket numbers
+    lucky_passengers = dfs[0][dfs[0]['Ticket'].isin(unique_tickets)]
+    
+    # Get the names of the lucky passengers
+    lucky_passenger_names = lucky_passengers['Name']
+    
+    # Return the names of the lucky passengers
+    return {"type": "text", "value": lucky_passenger_names.to_string(index=False)}
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-09-07 00:25:13 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    survived_passengers = dfs[0][dfs[0]['Survived'] == 1]
+    unique_tickets = survived_passengers['Ticket'].unique()
+    lucky_passengers = dfs[0][dfs[0]['Ticket'].isin(unique_tickets)]
+    lucky_passenger_names = lucky_passengers['Name']
+
+
+result = analyze_data(dfs)
+        ```
+2023-09-07 00:25:13 [INFO] Executed in: 22.66392183303833s
+2023-09-07 00:25:46 [ERROR] Could not load configuration
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pandasai/config.py", line 19, in load_config
+    with open(find_closest("pandasai.json"), "r") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/cyrildubovik/Python_projects/streamlit_panda/pandasai.json'
+2023-09-07 00:25:46 [INFO] Question: Список тех кто выжил
+
+
+2023-09-07 00:25:46 [INFO] Running PandasAI with openai LLM...
+2023-09-07 00:25:46 [INFO] Prompt ID: fb490534-2d52-48f0-b149-a3c3264f4f69
+2023-09-07 00:26:03 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Code goes here (do not add comments)
+    survived_passengers = dfs[0][dfs[0]['Survived'] == 1]
+    return {"type": "dataframe", "value": survived_passengers}
+
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-09-07 00:26:03 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    survived_passengers = dfs[0][dfs[0]['Survived'] == 1]
+    return {'type': 'dataframe', 'value': survived_passengers}
+
+
+result = analyze_data(dfs)
+        ```
+2023-09-07 00:26:03 [INFO] Answer: {'type': 'dataframe', 'value':      PassengerId  Survived  Pclass  ...     Fare Cabin  Embarked
+1              2         1       1  ...  71.2833   C85         C
+2              3         1       3  ...   7.9250   NaN         S
+3              4         1       1  ...  53.1000  C123         S
+8              9         1       3  ...  11.1333   NaN         S
+9             10         1       2  ...  30.0708   NaN         C
+..           ...       ...     ...  ...      ...   ...       ...
+875          876         1       3  ...   7.2250   NaN         C
+879          880         1       1  ...  83.1583   C50         C
+880          881         1       2  ...  26.0000   NaN         S
+887          888         1       1  ...  30.0000   B42         S
+889          890         1       1  ...  30.0000  C148         C
+
+[342 rows x 12 columns]}
+2023-09-07 00:26:03 [INFO] Executed in: 16.570559978485107s
+2023-09-07 00:26:03 [ERROR] Could not load configuration
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pandasai/config.py", line 19, in load_config
+    with open(find_closest("pandasai.json"), "r") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/cyrildubovik/Python_projects/streamlit_panda/pandasai.json'
